@@ -1,0 +1,2 @@
+# synectiks-website
+synectiks website
