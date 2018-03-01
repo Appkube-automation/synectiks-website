@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+.jumbotron{
+    height:19em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron > img {
+    position: absolute;
+    right: 9em;
+    top: 0em;
+    width: 30em;
+}
+
+.jumbotron > h2{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+    left: -10em;
+    top: -0.4em;
+    line-height: 1.3;
+}
+
+.heading h3{
+    margin: -1.4em;
+    line-height: 1.3;
+    margin-top: 0em;
+    margin-bottom: 1em;
+}
+.heading p{
+    margin-left: -1.9em;
+    margin-top: 2em;
+}
+ th, td {
+    border: 1px solid black;
+}
+ .jumbotron .mono{
+     position: absolute;
+     right: 10em;
+     top: -0.4em;
+     width: 30em;
+ }
+ .jumbotron.bg-mono{
+     background: #147FC1;
+ }
+ .jumbotron .audit{
+     position: absolute;
+     right: 9em;
+     top: 1.5em;
+     width: 26em;
+ } .jumbotron .micro{
+        position: absolute;
+        right: 19em;
+        top: 1.1em;
+        width: 18em;
+ }
+   .jumbotron .highper{
+       position: absolute;
+       right: 10em;
+       top: -0.4em;
+       width: 30em;
+
+   }
+
+.jumbotron .cloudmigration{
+    position: absolute;
+    right: 1em;
+    top: 1.2em;
+    width: 26em;
+   }
+
+/*cloud migration*/
+
+/* USER PROFILE PAGE */
+.card {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: rgba(214, 224, 226, 0.2);
+    -webkit-border-top-left-radius:5px;
+    -moz-border-top-left-radius:5px;
+    border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-top-right-radius:5px;
+    border-top-right-radius:5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
+}
+.card.hovercard .card-background {
+    height: 130px;
+}
+.card-background img {
+    -webkit-filter: blur(25px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+    filter: blur(25px);
+    margin-left: -100px;
+    margin-top: -200px;
+    min-width: 130%;
+}
+.card.hovercard .useravatar {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+}
+.card.hovercard .useravatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+.card.hovercard .card-info {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+}
+.card.hovercard .card-info .card-title {
+    padding:0 5px;
+    font-size: 20px;
+    line-height: 1;
+    color: #262626;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.card.hovercard .card-info {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+.btn-pref .btn {
+    -webkit-border-radius:0 !important;
+}
+
+#myCarousel .nav a small {
+    display:block;
+}
+#myCarousel .nav {
+    background:#eee;
+}
+#myCarousel .nav a {
+    border-radius:0px;
+}
+
+.theme-color{
+    background: #5C258D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.jumbotron.item.cloud{
+    background: #314755;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.highcharts-yaxis-grid .highcharts-grid-line {
+    display: none;
+}
+
+.btn-circle-tabs{
+    width: 10em;
+    border-radius: 50%;
+    height: 10em;
+    text-align: center;
+    position: relative;
+    top: 3em;
+    padding: 4.5em 2em;
+    color: #147FC1;
+    border: 2px solid #147FC1;
+    margin-top: 1em;
+    margin-bottom: 5em;
+    text-align: center;
+    font-size: 1em;
+    right: -2em;
+}
+.h5-para{
+    color: #5f6a72;
+}
+.h5{
+    color: #5F6A72;
+    font-weight: bolder;
+}
+
+    ul{
+        list-style: none;
+    }
+
+    .img-team{
+        border-color: rgba(0,0,0,1);
+        border-style: solid;
+        border-width: 2px!important;
+    }
+.img-papu{
+    position: relative;
+    top:2em;
+}
+.img-satish{
+    position: relative;
+    top: 1.1em;
+}
+.img-shaju{
+    position: relative;
+    top: 2.4em;
+}
+
+.career-bg{
+    background: url("../background/career.png");
+    background-size: cover;
+    background-position: inherit;
+    padding: 10em 10em;
+    height: 35em;
+}
+
+#career-h2{
+    font-size: 2em;text-align: left;
+    font-weight:300;font-style:normal;
+}
+.career-bg > h2 {
+    line-height: 1.5;
+    margin-top: -2.2em;
+    margin-left: 2.5em;
+}
+#typing-text{
+    font-size: 1.5em;
+    color: #d00c2d;
+}
+#career-h2-text{
+    font-size:1.5em;
+    margin-left: 2.59em;
+}
+#career-talent{
+    font-size:1.5em;
+}
+.btn-career > a{
+    position: relative;
+    top: 3.9em;
+    background: #2d8fe2;
+    padding: 0.5em 3em;
+    /* width: 8em; */
+    /* border-radius: 6px; */
+    color: white;
+    left: -5em;
+}
+.black-lowercase{
+    color: #000;
+    text-transform: none;
+}
+.career-block{
+/*    background: #f4f4f4;*/
+    padding: 2em 0em 2em 2em;
+/*    border-left: 0.5em solid #147fc1;*/
+    border-radius: 0.5em;
+    width: 35em;
+  text-align: left;  
+    color: goldenrod;
+/*  opacity: 0.5;*/
+}
+.career-block:hover{
+    background: #ccc;
+    padding: 2em 0em 2em 2em;
+/*    border-left: 0.5em solid #147fc1;*/
+    border-radius: 0em;
+    width: 35em;
+  text-align: left;
+    color: goldenrod;
+/*  opacity: 1;*/
+}
+.career-span-text{
+    text-transform: uppercase;
+    margin-left: 1em;
+}
+.fa.fa-map-marker{
+    position: relative;
+    left: -1em;
+    color: #1f1f1f;
+}
+.career-padding{
+  padding: 3em 3em;
+}
+.cloud-architect{
+/*  background: rgb(242, 246, 249);*/
+  /*min-width: 1289px;*/
+  left: 0px;
+  /*width: 1289px;*/
+  padding: 3em 3em;
+  margin-bottom: 2em;
+}
+.career-dtels-h2{
+  font-size: 3.1em !important;
+  font-weight: lighter;
+  text-align: left;
+  color: #010101;
+  margin-bottom: 1em;
+    text-transform: capitalize;
+}
+.career-dtels-h3{
+  font-size: 22px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-top: -25px;
+}
+.career-details-list{
+  list-style: outside;
+  line-height: 30.5px;
+  color: #888888;
+}
+.form{
+    position: relative;
+    left: -28em;
+    top: 5em;
+}
+input.career-input{
+  background: white;
+  width: 44em;
+    height: 3.6em;
+    padding: 0.8em 2em;
+    margin:0.8em 0em;
+  border: 0px;
+  border-radius: 0px;
+  border-bottom: 1px solid #147fc1;
+}
+input[type=file]{
+    background: white;
+    width: 44em;
+    height: 3.6em;
+    padding: 2em 2em;
+    margin:0.8em 0em;
+}
+.career-btn{
+    padding: 1em 10em;
+    background: #00adef;
+  text-align: center;
+    color: #F5F5F5;
+    width: 39.5em;
+    display: block;
+    box-sizing: border-box;
+    margin:0.8em 2.5em;
+}
+.text-upload-file{
+    font-size: 1em;
+    font-weight:lighter;
+    text-align: left;
+}
+.faq-p{
+    color: #0f0f0f;
+    font-size:1em;
+}
+.faq-bg{
+    height: 13em;
+    background: url(../icons/faq.jpg);
+/*background: #CAC531;*/
+    /*background: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);  !* Chrome 10-25, Safari 5.1-6 *!*/
+    /*background: linear-gradient(to right, #F3F9A7, #CAC531); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.career-block > a :hover{
+    list-style: none;
+}
+
+.career-block > a:focus{
+    list-style: none;
+}
+
+.career-block > a:active{
+    list-style: none;
+}
+
+.blue{
+  border: 0.5px solid; 
+  width: 10em;
+  position: relative;
+  left: 0em;
+} 
+.career-block > img
+{
+  width: 8em;
+  float: left;
+  opacity: 0.5;
+  position: relative;
+  left: 0em;
+  margin-right: 1em;
+}
+.career-block:hover img
+{
+  width: 8em;
+  float: left;
+  opacity: 1;
+  position: relative;
+  left: 0em;
+  margin-right: 1em;
+}
+.text-career-bold
+{
+  font-weight: 800;
+}
+#cloud-architect-career{
+  width: 12em;
+  position: relative;
+  top: -2.5em;
+}
+#business-analyst-career
+{
+  width: 7em;
+}
+#vm-career
+{
+  width: 9em;
+}
+#vm-career-admin
+{
+  width: 9em;
+}
+#developer-career{
+  width: 7em
+}
+#office-career
+{
+  width: 7em;
+}
+#system-career,#java-career
+{
+  width: 6em;
+}
+#designer-career{
+  width: 7em;
+}
+.bg-career
+{
+background: #DADBDD;
+  padding: 1em 4em 3em 4em;
+}
+.hr-color
+{
+  border: 1px solid #666666;
+}
+.margin-bottom-1xx
+{
+  margin-bottom: -0.8em;
+}
+.grey-shade
+{
+  color: #666666;
+}
+h3.btn-orange-shade
+{
+  font-size: 2em;
+  background: #fab043;
+  padding: 0.4em  1.56em;
+  margin-bottom: -0.5em;
+}
+.btn-white-shade
+{
+  font-size: 2em;
+  background: white;
+  padding: 0.4em  0.99em;
+}
+.btn-orange-shade:hover
+{
+background: #41A8B9;
+  color: whitesmoke;
+}
+.btn-white-shade:hover
+{
+  background:#41A8B9;
+  color: whitesmoke;
+}
+.group-btn
+{
+  float: right;
+  position: relative;
+  bottom: 10em;
+}
+.border-bottom
+{
+  border-bottom: 2px solid #41A8B9;
+  width: 15em;
+  position: relative;
+  border-radius: 0px;
+  bottom: 2em;
+}
+.margin-top-career
+{
+  margin-top: -12em;
+}
+.teal-shades
+{
+  color: #147fc1;
+}
+.input-label
+{
+  position: absolute;
+  left: 2.5em;
+  font-size: 1em;
+  font-weight: lighter;
+/*  float: left;*/
+}
+.margin-top-1xx
+{
+  margin-top: -8em;  
+}
+.margin-top-1x
+{
+  margin-top: -4em;
+}
+.margin-top-one
+{
+  margin-top: -10em;
+}
+.margin-top-career
+{
+  margin-top: -8em;
+}
+.margin-top-positive
+{
+  margin-top: -4.5em;
+}

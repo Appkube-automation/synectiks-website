@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+.nav.navbar-nav.main-nav {
+  display:block;
+  margin:0 auto;
+  width:100%;
+  max-width:1000px;
+}
+
+.nav.navbar-nav.main-nav {
+  list-style:disc outside;
+  list-style-type:disc;
+  list-style-position:outside;
+  list-style-image:initial;
+  width:100%;
+  padding:0;
+  margin:0;
+  text-align:center;
+}
+
+.navbar-nav > li {
+  list-style-type:none;
+  float:left;
+  padding:0;
+  line-height:50px;
+  height:50px;
+  margin:0;
+}
+
+.navbar.navbar-default {
+  background:#F8F8F8;
+  /*font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color:#007CC2;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background:transparent;
+  color:#337ab7;
+  text-decoration:none;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  color:#fbba00;
+  background:transparent;
+  text-decoration:none;
+  font-size:16px;
+  font-weight:900;
+  display:inline-block;
+  margin:0;
+  text-align:center;
+  transition:all .3s;
+}
+
+a:active {
+  background:transparent;
+}
+
+.navbar-default .navbar-toggle {
+  border-color:#ddd;
+}
+
+a:focus, a:hover {
+  color:#00C9FF;
+  text-decoration:underline;
+}
+
