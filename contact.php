@@ -35,7 +35,7 @@
         }
 
         #job{
-            width: 40.5em;
+            width: 38.5em;
             padding: 1em 1em;
             margin-top: 0.1em;
             margin-bottom: 9px;
