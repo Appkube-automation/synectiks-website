@@ -1,0 +1,148 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    -o-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+}
+ 
+#fname{
+    width: 30em;
+    padding: 1em 1em;
+    margin-bottom: 0.5em;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: #ed5a10;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container {
+    max-width:400px;
+    width:100%;
+    margin:0 auto;
+    position:relative;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+   /* background:#F9F9F9; */
+    padding:25px;
+    margin:0px 0;
+   /* border:5px solid #D5D2D2;*/ 
+}
+
+#contact h3 {
+    color: #F96;
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#contact h4 {
+    margin:5px 0 15px;
+    display:block;
+    font-size:13px;
+}
+
+fieldset {
+    border: none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+    width:45em;
+    /* border:1px solid #CCC; */
+    background:#FFF;
+   /* margin:0 0 5px;*/
+   margin: 0 0 5px 0;
+    padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+    -webkit-transition:border-color 0.3s ease-in-out;
+    -moz-transition:border-color 0.3s ease-in-out;
+    transition:border-color 0.3s ease-in-out;
+    border:1px solid #AAA;
+}
+
+#contact textarea {
+    height:100px;
+    max-width:177%;
+    resize:none;
+}
+#contact button[type="submit"] {
+    /*cursor: pointer;
+    width: 60%;
+    border: none;
+    background: #C40022;
+    color: #FFF;
+    padding: 10px;
+    font-size: 15px;
+    margin: 3em 2em 0em 4.5em;*/
+    outline: none;
+    border: none;
+    background-color: #FFC315;
+    border-bottom: 3px solid #bf9210;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    padding: 7px 35px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+#contact button[type="submit"]:hover {
+    background:#fbba00;
+    cursor: pointer;
+    border-bottom-color: #a67f0e;
+    text-decoration: none;
+    color: white;
+    -webkit-transition:background 0.3s ease-in-out;
+    -moz-transition:background 0.3s ease-in-out;
+    transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+    outline:0;
+    border:1px solid #999;
+}
+::-webkit-input-placeholder {
+    color:#888;
+}
+:-moz-placeholder {
+    color:#888;
+}
+::-moz-placeholder {
+    color:#888;
+}
+:-ms-input-placeholder {
+    color:#888;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea,#job{
+width:100%;
+}
+}
