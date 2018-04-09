@@ -1,3 +1,4 @@
+<?php include('contact_form_process.php'); ?>
 <!DOCTYPE html>
 <html>
 
@@ -20,15 +21,41 @@
     <link rel="stylesheet" href="assets/css/Slider_Carousel_webalgustocom.css">
     <link rel="stylesheet" href="assets/css/Slider_Carousel_webalgustocom1.css">
     <link rel="stylesheet" href="assets/css/Slider_Carousel_webalgustocom2.css">
-    <link rel="stylesheet" href="assets/css/styles.css">  <link rel="stylesheet" href="assets/css/mobile.css"> <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet" href="assets/css/mobile.css"> <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/contact_form.css">
     <style>
         #map-canvas {
             width: 100%;
             height: 135px;
             margin-bottom: 15px;
             border: 2px solid #fff;
+        }
+        #fname,#lname,#email,#company,#phone,#day{
+            width: 50em;
+            padding: 1em 1em;
+            margin-top: 1.5em;
+        }
+
+        #job{
+            width: 40.5em;
+            padding: 1em 1em;
+            margin-top: 0.1em;
+            margin-bottom: 9px;
+        }
+
+        #contact-submit{
+            cursor:pointer;
+            margin: 0em 3em;
+        }
+        .fa-angle-right:before {
+            content: "\f105";
+            position: relative;
+            left: 4em;
+        }
+        #job-role{
+            position: relative;
+            top: -0.8em;
         }
     </style>
 </head>
@@ -83,7 +110,7 @@
                             </ul>
                         </li>
                         <li><a href="https://synectiks.com/scloud.html">Scloud</a></li>
-                        <li><a href="https://synectiks.com/scloud.html">Technology Partners</a></li>
+                        <li><a href="https://synectiks.com/techpartners.html">Technology Partners</a></li>
                         <li class="dropdown "><a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b
                                 class="caret"></b></a>
                             <ul class="dropdown-menu mega-bg">
@@ -95,7 +122,7 @@
                                 <li><a href="https://synectiks.com/faq.html">FAQ's</a></li>
                             </ul>
                         </li>
-                        <li><a href="https://active.synectiks.com/contact-us.html">Contact Us</a></li>
+                        <li><a href="contact.php">Contact Us</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
 
@@ -112,12 +139,70 @@ top: -2.8em; font-weight:900; font-size:3.5em;">Get In Touch</h1>
         <div class="col-md-7">
             <div class="center-iframe">
                 <h3 style="margin-left:10.7em;">Send Us a message</h3>
-                <iframe height="620" allowTransparency="true"
-                        frameborder="0"
-                        scrolling="no"
-                        style="width:100%;border:none"
-                        src="http://synectiks.net/contact/form.php">
-                </iframe>
+                <div class="container">
+                    <form id="contact" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+
+                    <label>
+                        <span class="error"><?= $fname_error ?></span>
+                        <input placeholder="First name" id="fname" type="text" name="fname" value="<?= $fname ?>" tabindex="1" autofocus>
+
+                    </label> <br>
+                    <label>
+                        <span class="error"><?= $lname_error ?></span>
+                        <input placeholder="Last name" type="text" id="lname" name="lname" value="<?= $lname ?>" tabindex="1" autofocus>
+
+                    </label> <br>
+                    <label>
+                        <span class="error"><?= $email_error ?></span>
+                        <input placeholder="Company Email " type="text" id="email" name="email" value="<?= $email ?>" tabindex="2">
+
+                    </label> <br>
+                    <label>
+                        <span class="error"><?= $company_error ?></span>
+                        <input placeholder="Company" type="text" name="company" id="company" value="<?= $company ?>" tabindex="2">
+
+                    </label> <br>
+                    <label>
+
+                        <span class="error"><?= $job_error ?></span>
+                        <select name="job" id="job" value="<?= $job ?>">
+
+                            <option value="default">Please select Job Role</option>
+                            <option value="Academic/Researcher">Academic/Researcher</option>
+                            <option value="Advisor/Consultant">Advisor/Consultant</option>
+                            <option value="Business Executive">Business Executive</option>
+                            <option value="Developer/Engineer">Developer/Engineer</option>
+                            <option value="Entrepreneur (Founder/Co-Founder)">Entrepreneur (Founder/Co-Founder)</option>
+                            <option value="Finance">Finance</option>
+                            <option value="IT Executive">IT Executive</option>
+                            <option value="IT Professional or Technical Manager">IT Professional or Technical Manager
+                            </option>
+                            <option value="Press/Media Analyst">Press/Media Analyst</option>
+                            <option value="Sales/Marketing">Sales/Marketing</option>
+                            <option value="Solution/Systems Architect">Solution/Systems Architect</option>
+                            <option value="Student">Student</option>
+                            <option value="System Administrator">System Administrator</option>
+                            <option value="Venture Capitalist">Venture Capitalist</option>
+                        </select>
+                    </label> <br>
+                    <label>
+                        <span class="error"><?= $phone_error ?></span>
+                        <input placeholder="Phone" type="text" name="phone" id ="phone" value="<?= $phone ?>" tabindex="3">
+
+                    </label> <br>
+                    <!--        <label>-->
+                    <!--            <input placeholder="Your Web Site starts with http://" type="text" name="url" value="--><?//= $url ?><!--" tabindex="4" >-->
+                    <!--            <span class="error">--><?//= $url_error ?><!--</span>-->
+                    <!--        </label>-->
+                    <label>
+                        <textarea placeholder="comments" value="<?= $message ?>" id="day" name="message"></textarea>
+                    </label> <br>
+                    <label>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                    </label>
+                    <div class="success"><?= $success ?></div>
+                    </form>
+                </div>
                 <div class="center-iframe rt-form-text">
                 <p>What would you like to talk about?</p>
                 <ul>
