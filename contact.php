@@ -71,7 +71,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="https://synectiks.com"><img src="assets/img/Synectikslogo.png "/></a>
+                    <a class="navbar-brand" href="https://synectiks.com"><img src="assets/img/Synectikslogo.png"/></a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
@@ -122,7 +122,7 @@
                                 <li><a href="https://synectiks.com/faq.html">FAQ's</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.php">Contact Us</a></li>
+                        <li><a href="https://active.synectiks.com/contact.php">Contact Us</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
 
@@ -166,23 +166,11 @@ top: -2.8em; font-weight:900; font-size:3.5em;">Get In Touch</h1>
 
                             <span class="error"><?= $job_error ?></span>
                             <select name="job" id="job" value="<?= $job ?>">
-
-                                <option value="default">Please select Job Role</option>
-                                <option value="Academic/Researcher">Academic/Researcher</option>
-                                <option value="Advisor/Consultant">Advisor/Consultant</option>
-                                <option value="Business Executive">Business Executive</option>
-                                <option value="Developer/Engineer">Developer/Engineer</option>
-                                <option value="Entrepreneur (Founder/Co-Founder)">Entrepreneur (Founder/Co-Founder)</option>
-                                <option value="Finance">Finance</option>
-                                <option value="IT Executive">IT Executive</option>
-                                <option value="IT Professional or Technical Manager">IT Professional or Technical Manager
-                                </option>
-                                <option value="Press/Media Analyst">Press/Media Analyst</option>
-                                <option value="Sales/Marketing">Sales/Marketing</option>
-                                <option value="Solution/Systems Architect">Solution/Systems Architect</option>
-                                <option value="Student">Student</option>
-                                <option value="System Administrator">System Administrator</option>
-                                <option value="Venture Capitalist">Venture Capitalist</option>
+                                <option value="default">What would you like to talk about?</option>
+                                <option value="Synectiks's Solutions">Synectiks's Solutions</option>
+                                <option value="Career Opportunities">Career Opportunities</option>
+                                <option value="Partnership Inquiries">Partnership Inquiries</option>
+                                <option value="Media">Media</option>
                             </select>
                         </label> <br>
                         <label>
@@ -195,22 +183,13 @@ top: -2.8em; font-weight:900; font-size:3.5em;">Get In Touch</h1>
                         <!--            <span class="error">--><?//= $url_error ?><!--</span>-->
                         <!--        </label>-->
                         <label>
-                            <textarea placeholder="comments" value="<?= $message ?>" id="day" name="message"></textarea>
+                            <textarea placeholder="How can Synectiks' help?" value="<?= $message ?>" id="day" name="message"></textarea>
                         </label> <br>
                         <label>
                             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit<i class="fa fa-angle-right" aria-hidden="true"></i></button>
                         </label>
                         <div class="success"><?= $success ?></div>
                     </form>
-
-                    <p>What would you like to talk about?</p>
-                    <ul>
-                        <li>Synectiks's Solutions</li>
-                        <li>Career Oppertunities</li>
-                        <li>Partnership Inquiries</li>
-                        <li>Media</li>
-                    </ul>
-                    <p>How can Synectiks' help?</p>
                     <a href="https://synectiks.com">https://synectiks.com</a>
                 </div>
             </div>
