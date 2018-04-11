@@ -190,7 +190,6 @@ top: -2.8em; font-weight:900; font-size:3.5em;">Get In Touch</h1>
                         </label>
                         <div class="success"><?= $success ?></div>
                     </form>
-                    <a href="https://synectiks.com">https://synectiks.com</a>
                 </div>
             </div>
         </div>
@@ -213,12 +212,12 @@ top: -2.8em; font-weight:900; font-size:3.5em;">Get In Touch</h1>
                     info@synectiks.com</p></a>
             <a href="mailto:support@synectiks.com"><p style="color: #83D4FA" class="office-line-height">
                     support@synectiks.com</p></a>
-            <a href="mailto:operations@Synectiks.com"><p style="color: #83D4FA" class="office-line-height">
-                    operations@Synectiks.com</p></a>
-            <a href="mailto:finance@Sysnectiks.com"><p style="color: #83D4FA" class="office-line-height">
-                    finance@Sysnectiks.com</p></a>
-            <a href="mailto:hr@Sysnectiks.com"><p style="color: #83D4FA" class="office-line-height">
-                    hr@Sysnectiks.com</p></a>
+            <a href="mailto:operations@synectiks.com"><p style="color: #83D4FA" class="office-line-height">
+                    operations@synectiks.com</p></a>
+            <a href="mailto:finance@sysnectiks.com"><p style="color: #83D4FA" class="office-line-height">
+                    finance@synectiks.com</p></a>
+            <a href="mailto:hr@synectiks.com"><p style="color: #83D4FA" class="office-line-height">
+                    hr@synectiks.com</p></a>
             <h4 class="margin-call-bottom margin-top-contact">Visit Us at the Office</h4>
             <hr style="color: #FCFCFC;">
 
@@ -236,7 +235,7 @@ top: -2.8em; font-weight:900; font-size:3.5em;">Get In Touch</h1>
             <p class="office-line-height">1 Sophia Road, #05-23,</p>
             <p class="office-line-height">Peace Center,</p>
             <p class="office-line-height">Singapore 228149</p>
-
+            <a href="https://synectiks.com">https://synectiks.com</a>
 
         </div>
 
