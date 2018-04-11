@@ -214,7 +214,7 @@ top: -2.8em; font-weight:900; font-size:3.5em;">Get In Touch</h1>
                     support@synectiks.com</p></a>
             <a href="mailto:operations@synectiks.com"><p style="color: #83D4FA" class="office-line-height">
                     operations@synectiks.com</p></a>
-            <a href="mailto:finance@sysnectiks.com"><p style="color: #83D4FA" class="office-line-height">
+            <a href="mailto:finance@synectiks.com"><p style="color: #83D4FA" class="office-line-height">
                     finance@synectiks.com</p></a>
             <a href="mailto:hr@synectiks.com"><p style="color: #83D4FA" class="office-line-height">
                     hr@synectiks.com</p></a>
