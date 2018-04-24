@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Synectiks | Open source Container Orchestration and Automation Platform</title>
+    <meta name="description"
+          content="Our Open Container Orchestration and Automation Platform helps organizations to become Hardware/OS/Vendor/Operation agnostic and achieve scalability & reliability.">
+    <link rel="canonical" href="https://synectiks.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.go-ogleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/4-Columns-Info-Icons.css">
+    <link rel="stylesheet" href="assets/css/boot-menu.css">
+    <link rel="stylesheet" href="assets/css/Central-Aligned-Clear-Nav.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/menu-header.css">
+    <link rel="stylesheet" href="assets/css/menu-header1.css">
+    <link rel="stylesheet" href="assets/css/multi-sections.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Menu.css">
+    <link rel="stylesheet" href="assets/css/page-bread.css">
+    <link rel="stylesheet" href="assets/css/Slider_Carousel_webalgustocom.css">
+    <link rel="stylesheet" href="assets/css/Slider_Carousel_webalgustocom1.css">
+    <link rel="stylesheet" href="assets/css/Slider_Carousel_webalgustocom2.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://npmcdn.com/js-offcanvas@1.0/dist/_css/minified/js-offcanvas.css">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <style>
+        .hexagon-top {
+            position: relative;
+            width: 200px;
+            height: 115.47px;
+            background-color: white;
+            margin: 57.74px 0;
+            border-left: solid 10px #4290CE;
+            border-right: solid 10px #4290CE;
+            margin: auto auto;
+            top: -5em;
+        }
+
+        .hexagon-top:before,
+        .hexagon-top:after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            width: 141.42px;
+            height: 141.42px;
+            -webkit-transform: scaleY(0.5774) rotate(-45deg);
+            -ms-transform: scaleY(0.5774) rotate(-45deg);
+            transform: scaleY(0.5774) rotate(-45deg);
+            background-color: inherit;
+            left: 19.2893px;
+        }
+
+        .hexagon-top:before {
+            top: -70.7107px;
+            border-top: solid 14.1421px #4290CE;
+            border-right: solid 14.1421px #4290CE;
+        }
+
+        .hexagon-top:after {
+            bottom: -70.7107px;
+            border-bottom: solid 14.1421px #4290CE;
+            border-left: solid 14.1421px #4290CE;
+        }
+
+        .hexagon {
+            position: absolute;
+            top: -7em;
+            right: 6em;
+            width: 150px;
+            height: 86.60px;
+            margin: 43.30px 0;
+            background-image: url(https://picsum.photos/200/300/?blur);
+            background-size: auto 161.6581px;
+            background-position: center;
+            border-left: solid 5px #ff8000;
+            border-right: solid 5px #ff8000;
+        }
+
+        .hexTop,
+        .hexBottom {
+            position: absolute;
+            z-index: 1;
+            width: 106.07px;
+            height: 106.07px;
+            overflow: hidden;
+            -webkit-transform: scaleY(0.5774) rotate(-45deg);
+            -ms-transform: scaleY(0.5774) rotate(-45deg);
+            transform: scaleY(0.5774) rotate(-45deg);
+            background: inherit;
+            left: 16.97px;
+        }
+
+        /*counter transform the bg image on the caps*/
+        .hexTop:after,
+        .hexBottom:after {
+            content: "";
+            position: absolute;
+            width: 140.0000px;
+            height: 80.82903768654762px;
+            -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-40.4145px);
+            -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-40.4145px);
+            transform: rotate(45deg) scaleY(1.7321) translateY(-40.4145px);
+            -webkit-transform-origin: 0 0;
+            -ms-transform-origin: 0 0;
+            transform-origin: 0 0;
+            background: inherit;
+        }
+
+        .hexTop {
+            top: -53.0330px;
+            border-top: solid 7.0711px #ff8000;
+            border-right: solid 7.0711px #ff8000;
+        }
+
+        .hexTop:after {
+            background-position: center top;
+        }
+
+        .hexBottom {
+            bottom: -53.0330px;
+            border-bottom: solid 7.0711px #ff8000;
+            border-left: solid 7.0711px #ff8000;
+        }
+
+        .hexBottom:after {
+            background-position: center bottom;
+        }
+
+        .hexagon:after {
+            content: "";
+            position: absolute;
+            top: 2.8868px;
+            left: 0;
+            width: 140.0000px;
+            height: 80.8290px;
+            z-index: 2;
+            background: inherit;
+        }
+
+        .hex-box {
+            position: relative;
+            padding: 1.8em 2em 1em 6em;
+            background: #4290CE;
+            margin-top: 5em;
+            width: 98vh;
+        }
+
+        .hexagon-left {
+            position: absolute;
+            left: 2em;
+        }
+
+        .hexagon-right {
+            position: absolute;
+            right: 6em;
+            bottom: 12em;
+        }
+
+        .black {
+            width: 100%;
+            background: rgba(0, 0, 0, 1);
+            padding: 6rem 3em 4em 5em;
+            border-top: 10px solid #4290CE;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div id="navbar">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="navbar-header" style="margin: 0 25em 0 8em;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="https://synectiks.com"><img src="assets/img/Synectikslogo.png"/></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav menu">
+                    <li><a href="https://synectiks.com/solutions.html">Solutions </a></li>
+                    <li><a href="https://synectiks.com/scloud.html">Scloud</a></li>
+                    <li><a href="https://synectiks.com/techpartners.html">Technology Partners</a></li>
+                    <li class="dropdown "><a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b
+                            class="caret"></b></a>
+                        <ul class="dropdown-menu mega-bg">
+                            <!--                             <li class="kopie"><a href="#">Dropdown2</a></li> -->
+                            <li><a href="https://synectiks.com/about-us.html">About Synectiks</a></li>
+                            <li><a href="https://synectiks.com/approach.html">Approach</a></li>
+                            <li class="d-none"><a href="team-page.html">Team</a></li>
+                            <li><a href="https://synectiks.com/career.html">Careers</a></li>
+                            <li><a href="https://synectiks.com/faq.html">FAQ's</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://active.synectiks.com/contact.php">Contact Us</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->            </nav>
+    </div>
+    <img src="assets/img/slider-three-content/slider.png" alt="" width="100%">
+    <hr class="blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="mt-c  ml-c text-white">SECURITY & BEST PRACTICES</h3>
+            </div>
+            <div class="col-md-4">
+                <div class="square-box square-box-2x margin-center"><img
+                        src="assets/img/slider-three-content/Aws-Standard-Consulting-Partner-logo.png" height="229"
+                        width="235" class="consulting-partner"/></div>
+            </div>
+            <div class="col-md-4">
+                <h3 class="mt-c text-white">COST & TIME OPTIMIZATION</h3>
+            </div>
+        </div>
+    </div>
+</header>
+<!--<div class="curve"></div>-->
+<section class="bg-white">
+    <div class="container-fluid">
+        <div class="row" style="margin-top: -1.5em">
+            <div class="col-md-6">
+                <div class="hex-box">
+                    <div class="square-box square-box-1x margin-center margin-right"><img
+                            src="assets/img/slider-three-content/Cloud-Utilization-and-billing-icon.png"
+                            class="bg-optimize"/>
+                    </div>
+                    <div class="card-cloud">
+
+                        <h2 class="text-white">Optimize your Cloud Utilization <br>and Billing.</h2>
+
+                        <ul style="margin-left: 4%">
+                            <li class="text-white f-16">Adopt containerization and server less</li>
+                            <li class="text-white f-16">Optimal dynamic instance selection</li>
+                            <li class="text-white f-16">Reclaim under utilized resources</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 margin-top-pic-group">
+                <!--<div class="row">-->
+                <!--<div class="col-sm-6 box-pad br-r br-b"><img class="pic-group"-->
+                <!--src="assets/img/slider-three-content/Operational-best-practices-Icon.png"-->
+                <!--alt="">-->
+                <!--<h4><strong>Operational Best <br> Practices</strong></h4></div>-->
+                <!--<div class="col-sm-6 box-pad br-b"><img class="pic-group"-->
+                <!--src="assets/img/slider-three-content/Optimized-Cost-Icon.png" alt="">-->
+                <!--<h4><strong>Optimized <br> Cost</strong></h4>-->
+                <!--</div>-->
+                <!--<div class="col-sm-6 box-pad-1 br-r"><img class="pic-group"-->
+                <!--src="assets/img/slider-three-content/secure-infrstructure-icon.png"-->
+                <!--alt="">-->
+                <!--<h4><strong>Standard Compliant <br>Infrastructure</strong></h4></div>-->
+                <!--<div class="col-sm-6 box-pad-1"><img class="pic-group"-->
+                <!--src="assets/img/slider-three-content/Validated-Network-Configurations-Icon.png"-->
+                <!--alt="">-->
+                <!--<h4><strong>Continous Billing <br>Control</strong></h4>-->
+                <!--</div>-->
+                <img src="assets/img/slider-three-content/4-icons.png" alt="">
+                <!--</div>-->
+            </div>
+        </div>
+        <div class="row mt-11">
+            <div class="col-md-6">
+                <img src="assets/img/slider-three-content/tick-icon.png" alt="" width="95%" class="tick-m">
+                <div class="tick-btn">
+
+                    <h4 class="col-sm-offset-0-4">Have Questions? <br>
+                        Our Tech Experts are here to help
+                    </h4>
+                    <a href="https://active.synectiks.com/contact.php" class="btn btn-primary text-white p-btn">Let Us
+                        Connect</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="https://www.synectiks.com/assets/img/Synectikslogo.png" alt="" class="logo-tick">
+                <div class="hex-box">
+                    <div class="square-box square-box-1x margin-center margin-left"><img
+                            src="assets/img/slider-three-content/Continuous-Security-and-Governance-icon1.png"
+                            class="bg-csg"/>
+                    </div>
+                    <div class="card-cloud-1">
+                        <h2 class="text-white">Continuous Security and Governance</h2>
+                        <p class="text-white f-16">Ensure securoty and compliance across multiple account / product /
+                            environment.
+                            Compliance Check for CIS, HIPPA, PCI-DSS. <br>
+                            Ensure account wise security role and policies. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid black">
+            <div class="square-box square-box-2x margin-center margin-right-5x margin-top"><img
+                    src="assets/img/slider-three-content/user.png" class="third-user"/></div>
+            <div class="row">
+                <!--<hr class="blue">-->
+                <h2 class="bg-dark-white-text text-white text-left btn-g-h">SECURITY & BEST PRACTICES. COST & TIME
+                    OPTIMIZATION.</h2>
+                <div class="col-md-8">
+                    <div class="btn-g">
+                        <a href="" class="btn btn-primary text-white p-btn">Access Your AWS Account</a>
+                        <a href="#td_form" class="btn btn-primary-outline p-btn p-btnn">Request A Demo</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <img src="assets/img/slider-three-content/Aws-Standard-Consulting-Partner-logo.png" alt=""
+                         class="col-md-offset-2 aws-btn" width="22%">
+
+                    <a class="btn btn-primary-outline p-btn p-btnn" data-toggle="modal" href='#modal-id'>Access Now</a>
+                    <div class="modal fade" id="modal-id">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        &times;
+                                    </button>
+                                    <!-- <h4 class="modal-title">Modal title</h4> -->
+                                </div>
+                                <div class="modal-body">
+                                    <section class="td_form  bg-transparent" id="td_form-1">
+                                        <div class="layout-wrap bg-transparent" style="width:100%;background: #FFffff">
+                                            <div class="layout-row">
+                                                <div role="form" class="wpcf7" id="wpcf7-f8495-p12851-o1-1" lang="en-US"
+                                                     dir="ltr">
+                                                    <form action="" method="post" class="wpcf7-form"
+                                                          novalidate="novalidate">
+                                                        <div style="display: none;">
+                                                            <input type="hidden" name="_wpcf7" value="8495"/>
+                                                            <input type="hidden" name="_wpcf7_version" value="4.9.2"/>
+                                                            <input type="hidden" name="_wpcf7_locale" value="en_US"/>
+                                                            <input type="hidden" name="_wpcf7_unit_tag"
+                                                                   value="wpcf7-f8495-p12851-o1"/>
+                                                            <input type="hidden" name="_wpcf7_container_post"
+                                                                   value="12851"/>
+                                                        </div>
+                                                        <div class="input">
+                                                            <label><span
+                                                                    class="wpcf7-form-control-wrap first-name"><input
+                                                                    type="text"
+                                                                    name="first-name"
+                                                                    value="" size="40"
+                                                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required b"
+                                                                    aria-required="true"
+                                                                    aria-invalid="false" placeholder="First Name"/></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="input">
+                                                            <label><span
+                                                                    class="wpcf7-form-control-wrap last-name"><input
+                                                                    type="text"
+                                                                    name="last-name"
+                                                                    value="" size="40"
+                                                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required b"
+                                                                    aria-required="true"
+                                                                    aria-invalid="false" placeholder="Last Name"/></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="input">
+                                                            <label><span
+                                                                    class="wpcf7-form-control-wrap company-name"><input
+                                                                    type="text"
+                                                                    name="company-name"
+                                                                    value=""
+                                                                    size="40"
+                                                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required b"
+                                                                    aria-required="true"
+                                                                    aria-invalid="false" placeholder="Email"/></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="input">
+                                                            <label><span
+                                                                    class="wpcf7-form-control-wrap job-title"><input
+                                                                    type="text"
+                                                                    name="job-title"
+                                                                    value="" size="40"
+                                                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required b"
+                                                                    aria-required="true"
+                                                                    aria-invalid="false" placeholder="Phone"/></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="input">
+                                                            <label><span
+                                                                    class="wpcf7-form-control-wrap your-email"><input
+                                                                    type="email" name="your-email" value="" size="40"
+                                                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email b"
+                                                                    aria-required="true" aria-invalid="false" placeholder="Organization"/></span>
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="signup--submit">
+                                                            <input type="submit" value="Submit"
+                                                                   class="wpcf7-form-control wpcf7-submit submit--btn"/>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="td_form" id="td_form">
+    <div class="layout-wrap">
+        <div class="layout-row">
+            <h2 class="td_form--title" style="    text-align: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+}">Ask for Demo <br>
+                <span class="h4">Straight talk on your challenges.</span>
+            </h2>
+
+            <div role="form" class="wpcf7" id="wpcf7-f8495-p12851-o1" lang="en-US" dir="ltr">
+                <form action="" method="post" class="wpcf7-form"
+                      novalidate="novalidate">
+                    <div style="display: none;">
+                        <input type="hidden" name="_wpcf7" value="8495"/>
+                        <input type="hidden" name="_wpcf7_version" value="4.9.2"/>
+                        <input type="hidden" name="_wpcf7_locale" value="en_US"/>
+                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f8495-p12851-o1"/>
+                        <input type="hidden" name="_wpcf7_container_post" value="12851"/>
+                    </div>
+                    <div class="input">
+                        <label> First Name <span class="wpcf7-form-control-wrap first-name"><input type="text"
+                                                                                                   name="first-name"
+                                                                                                   value="" size="40"
+                                                                                                   class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                                                   aria-required="true"
+                                                                                                   aria-invalid="false"/></span>
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label> Last Name <span class="wpcf7-form-control-wrap last-name"><input type="text"
+                                                                                                 name="last-name"
+                                                                                                 value="" size="40"
+                                                                                                 class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                                                 aria-required="true"
+                                                                                                 aria-invalid="false"/></span>
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label> Company Name <span class="wpcf7-form-control-wrap company-name"><input type="text"
+                                                                                                       name="company-name"
+                                                                                                       value=""
+                                                                                                       size="40"
+                                                                                                       class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                                                       aria-required="true"
+                                                                                                       aria-invalid="false"/></span>
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label> Job Title <span class="wpcf7-form-control-wrap job-title"><input type="text"
+                                                                                                 name="job-title"
+                                                                                                 value="" size="40"
+                                                                                                 class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                                                 aria-required="true"
+                                                                                                 aria-invalid="false"/></span>
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label> Your Email (required) <span class="wpcf7-form-control-wrap your-email"><input
+                                type="email" name="your-email" value="" size="40"
+                                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                aria-required="true" aria-invalid="false"/></span> </label>
+                    </div>
+                    <div class="input">
+                        <label> Your Telephone (required) <span class="wpcf7-form-control-wrap telephone"><input
+                                type="tel" name="telephone" value="" size="40"
+                                class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel"
+                                aria-invalid="false"/></span> </label>
+                    </div>
+
+                    <label class="message"> Your Message <span class="wpcf7-form-control-wrap your-message"><textarea
+                            name="your-message" cols="80" rows="10" class="wpcf7-form-control wpcf7-textarea"
+                            aria-invalid="false" style="width: 60em;"></textarea></span> </label>
+
+                    <div class="signup--submit">
+                        <input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit submit--btn"/>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer style="background: transparent">
+    <div class="row" style="border-bottom: 1px solid #cecece; padding: 0.5em;">
+        <div class="col-md-5">
+            <div class="footer-menu padding-top">
+                <ul class="footer-menu-list">
+                    <li><a class="footer-link-menu" href="solutions.html">Solutions</a></li>
+                    <li><a class="footer-link-menu" href="scloud.html">Scloud</a></li>
+                    <li><a class="footer-link-menu" href="techpartners.html">Technology Partners</a></li>
+                    <li><a class="footer-link-menu" href="career.html">Careers</a></li>
+                    <li><a class="footer-link-menu" href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="social text-right padding-top">
+                <a class="fa fa-twitter" title="" target="_blank" href="https://twitter.com/synectiks"></a>
+                <a class="fa fa-facebook" title="" target="_blank" href="https://www.facebook.com/synectikscloud/"></a>
+                <a class="fa fa-linkedin" title="" target="_blank" href="https://www.linkedin.com/company/7941089/"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="margin-footer"><h6 class="text-center grey-color">&COPY; Synectiks is Trademark of Synectiks Inc. All
+        Right Reserved.</h6>
+        <h6 class="text-center grey-color">Terms & Conditions | Privacy Policy</h6></div>
+</footer>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="/assets/js/classie.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+<!--
+big icon increase size --done
+increase cloud height --done
+text beside of 1st logo --done
+box one text full copybandar copy --done
+split text into two of four icons --done
+big space between two rows--done
+add sinectiks logo beside tick box icon --done
+increase tick icon size --done
+increase user icon size  --doe
+below tick icon on click button go to below page form --done
+button text white. ohhover change to blue --done
+Above form add amazon partner logo in black section make it three columns. --done
+with logo access now button. on click on Access button form modal. --done
+-->
