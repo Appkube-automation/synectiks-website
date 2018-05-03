@@ -92,7 +92,7 @@ if (empty($_POST["job"])) {
             $message_body .=  "$key: $value\n";
         }
 
-        $to = 'synectiks@gmail.com';
+        $to = 'papu.bhattacharya@synectiks.com';
         $subject = 'Contact Form Submit';
         $message = "
         First Name: $fname. <br>
